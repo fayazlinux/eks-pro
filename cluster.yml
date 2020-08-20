@@ -1,0 +1,16 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+   name: Websitecluster
+   region: ap-south-1
+
+nodeGroups:
+    - name: NodeGroup1
+      desiredCapacity: 2
+      instanceType: t2.micro
+       
+    - name: NodeGroup2
+      desiredCapacity: 1
+      instanceType: t2.small
+         
